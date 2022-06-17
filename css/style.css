@@ -151,6 +151,10 @@ table {
     padding: 0 15px;
 }
 
+.header {
+    border-top: 1px solid #3882e5;
+}
+
 .header-menu__list {
     height: 86px;
 }
@@ -166,9 +170,11 @@ table {
 }
 
 .header-menu__item__link {
+    font-family: 'Open Sans', sans-serif;
     color: #2f3f54;
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
 }
+
