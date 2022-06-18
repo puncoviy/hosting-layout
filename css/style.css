@@ -149,6 +149,7 @@ body {
     font-weight: 400;
     font-family: 'Lato', sans-serif;
     line-height: 24px;
+    color: #4a6385;
 }
 
 .container {
@@ -185,11 +186,11 @@ body {
 }
 
 .top {
-    /* background-color: #3882e5; */
     background-color: #3882e5;
     background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(7) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(214, 78%, 55%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-35,-105)' fill='url(%23a)'/></svg>");
-    padding: 160px 0 285px 0;
+    padding: 160px 0 185px 0;
     color: #fff;
+    margin-bottom: 160px;
 }
 
 .top-inner {
@@ -276,17 +277,184 @@ body {
     background: linear-gradient(#1ce08c, #14aeaa);
 }
 
-.top-img {
-}
 .top-img__box {
+    position: relative;
 }
-.hero-img {
-}
+
 .top-img__circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    position: absolute;
+    right: -50px;
+    top: -50px;
 }
 .top-img__title {
+    font-size: 14px;
+    line-height: 24px;
+    align-self: flex-start;
 }
 .top-img__price {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 24px;
+    margin: 20px 0;
 }
 .top-img__date {
+    font-size: 14px;
+    line-height: 24px;
+    align-self: flex-end;
+}
+
+.title {
+    font-size: 40px;
+    line-height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.colored-blue {
+    color: #2575e7;
+}
+
+.colored-red {
+    color: #e74c3c;
+}
+
+.colored-green {
+    color: #42d6c1;
+}
+
+.price-description {
+    text-align: center;
+    font-size: 14px;
+    max-width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 126px;
+}
+
+.options-list {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 182px;
+}
+
+.options-item {
+    box-shadow: 0px 0px 20px #aeaeae;
+    border-radius: 3px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.options-item__container {
+    padding: 28px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.options-item::before {
+    position: absolute;
+    content: '';
+    background-color: #2575e7;
+    width: 319px;
+    height: 443px;
+    border-radius: 50%;
+    top: -345px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top .7s;
+}
+
+.options-item:hover::before {
+    top: -325px;
+}
+
+.options-item__price {
+    text-align: center;
+    margin-bottom: 78px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #fff;
+}
+
+.euro {
+    font-size: 22px;
+}
+
+.month {
+    font-size: 16px;
+}
+
+.options-item__img {
+    margin: 0 auto 48px;
+    height: 123px;
+}
+
+.options-item__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 33px;
+}
+
+.options-item__description {
+    font-size: 14px;
+    margin-bottom: 65px;
+}
+
+.options-item__features {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 77px;
+}
+
+.options-item__features-item {
+    padding-left: 36px;
+    position: relative;
+}
+
+.options-item__features-item::before {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    content: '';
+    background: url(../img/check.svg);
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    opacity: 0.6;
+}
+
+.options-item__btn {
+    display: block;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    background-color: #2575e7;
+}
+
+.options-item__btn:hover {
+    background: linear-gradient(#1ce08c, #14aeaa);
 }
