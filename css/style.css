@@ -328,6 +328,7 @@ body {
 
 .colored-red {
     color: #e74c3c;
+    cursor: pointer;
 }
 
 .colored-green {
