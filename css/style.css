@@ -427,6 +427,7 @@ body {
 .options-item__features-item {
     padding-left: 36px;
     position: relative;
+    margin-bottom: 12px;
 }
 
 .options-item__features-item::before {
