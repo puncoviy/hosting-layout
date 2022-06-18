@@ -145,6 +145,12 @@ table {
     box-sizing: border-box;
 }
 
+body {
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -178,3 +184,109 @@ table {
     text-transform: uppercase;
 }
 
+.top {
+    /* background-color: #3882e5; */
+    background-color: #3882e5;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(7) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(214, 78%, 55%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-35,-105)' fill='url(%23a)'/></svg>");
+    padding: 160px 0 285px 0;
+    color: #fff;
+}
+
+.top-inner {
+    display: flex;
+}
+
+.top-info {
+    max-width: 555px;
+    margin-right: 30px;
+}
+.top-info__subtitle {
+    font-size: 14px;
+}
+
+.top-info__subtitle:nth-of-type(3){
+    display: block;
+    margin-top: 37px;
+}
+
+.top-info__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 27px;
+}
+.top-info__price {
+    font-weight: 700;
+    font-size: 19px;
+    margin-bottom: 17px;
+}
+.top-info__features-list {
+    font-size: 14px;
+    margin-top: 43px;
+    margin-bottom: 56px;
+}
+.top-info__features-item {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-left: 25px;
+}
+
+.top-info__features-item::before {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    content: '';
+    background: url(../img/checkbox.svg);
+    background-size: contain;
+    top: 7px;
+    left: -24px;
+}
+
+.wp {
+    margin-left: 15px;
+    position: relative;
+}
+
+.wp::before {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    content: '';
+    background: url(../img/wp.svg);
+    background-size: contain;
+    top: 2px;
+    left: -16px;
+}
+
+.top-info__btn {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 44px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    transition: all 1s;
+}
+
+.top-info__btn:hover {
+    background: linear-gradient(#1ce08c, #14aeaa);
+}
+
+.top-img {
+}
+.top-img__box {
+}
+.hero-img {
+}
+.top-img__circle {
+}
+.top-img__title {
+}
+.top-img__price {
+}
+.top-img__date {
+}
