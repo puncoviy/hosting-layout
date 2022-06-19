@@ -185,6 +185,10 @@ body {
     text-transform: uppercase;
 }
 
+                                    /* ------------------------------------------- */
+                                    /* ------------------------------------------- */
+                                    /* ------------------------------------------- */
+
 .top {
     background-color: #3882e5;
     background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(7) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(214, 78%, 55%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-35,-105)' fill='url(%23a)'/></svg>");
@@ -312,6 +316,10 @@ body {
     line-height: 24px;
     align-self: flex-end;
 }
+
+                                /* ------------------------------------------- */
+                                /* ------------------------------------------- */
+                                /* ------------------------------------------- */
 
 .title {
     font-size: 40px;
@@ -454,9 +462,117 @@ body {
     text-decoration: none;
     padding-top: 23px;
     padding-bottom: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: #2575e7;
 }
 
 .options-item__btn:hover {
+    background: linear-gradient(#1ce08c, #14aeaa);
+}
+
+                                /* ------------------------------------------- */
+                                /* ------------------------------------------- */
+                                /* ------------------------------------------- */
+
+.footer {
+    padding-top: 84px;
+    padding-bottom: 125px;
+    color: #718db2;
+    background-color: #344358;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(7) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='1' stroke='hsla(213, 26%, 27%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+}
+
+.footer-inner {
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+}
+
+.footer-content:not(.footer-content:nth-child(1+4n)) {
+    flex-basis: 160px;
+}
+
+.footer-content:nth-child(1) {
+    max-width: 250px;
+}
+
+.footer-content:nth-child(4) {
+    max-width: 270px;
+}
+
+.footer__text {
+    font-size: 13px;
+    line-height: 22px;
+    padding: 30px 0;
+    border-bottom: 1px solid #718db2;
+}
+
+.footer-title {
+    color: #d0e4ff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 33px;
+}
+
+.footer-link {
+    font-size: 13px;
+    text-decoration: none;
+    color: #718db2;
+    display: inline-block;
+}
+
+.footer-link {
+    margin-bottom: 10px;
+}
+
+.footer__form input {
+    border: 1px solid rgba(62, 78, 97, 0.7);
+    border-bottom: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 16px 11px;
+    width: 270px;
+    height: 38px;
+}
+
+.footer__form input::placeholder {
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    color: #718db2;
+}
+
+.footer__form textarea {
+    border: 1px solid rgba(62, 78, 97, 0.7);
+    background-color: transparent;
+    padding: 16px 11px;
+    width: 270px;
+    height: 85px;
+    resize: none;
+    color:#fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.footer__form textarea::placeholder {
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    color: #718db2;
+}
+
+.footer__form-btn {
+    cursor: pointer;
+    border: none;
+    background-color: #2575e7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    padding: 12px 15px;
+}
+
+.footer__form-btn:hover {
     background: linear-gradient(#1ce08c, #14aeaa);
 }
