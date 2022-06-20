@@ -485,15 +485,23 @@ body {
     margin-bottom: 175px;
 }
 
-.reviews-box {
-    background-color: #2575e7;
-    display: flex;
+.reviews-slider__item {
     box-shadow: 0px 0px 20px #aeaeae;
 }
 
-.reviews-slider__item {
-    width: 524px;
+.reviews-box {
+    background-color: #2575e7;
+    display: flex;
+    width: 520px;
     min-height: 347px;
+}
+
+.slick-list {
+    margin: 0 -50px;
+}
+
+.slick-track {
+    margin: 0 50px;
 }
 
 .reviews-box__avatar {
