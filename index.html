@@ -20,13 +20,10 @@
     <header class="header">
         <div class="container">
             <nav class="header-menu">
+                <a href="#" class="logo">
+                    <img class="logo__img" src="./img/logo.png" alt="logo">
+                </a>
                 <ul class="header-menu__list">
-                    <li class="header-menu__item">
-                        <a href="#" class="logo">
-                            <img class="logo__img" src="./img/logo.png" alt="logo">
-                        </a>
-                    </li>
-
                     <li class="header-menu__item"><a href="#" class="header-menu__item__link">Home</a></li>
                     <li class="header-menu__item"><a href="#" class="header-menu__item__link">About us</a></li>
                     <li class="header-menu__item"><a href="#" class="header-menu__item__link">WHMCS-bridge</a></li>
@@ -35,6 +32,23 @@
                     <li class="header-menu__item"><a href="#" class="header-menu__item__link">Blog</a></li>
                     <li class="header-menu__item"><a href="#" class="header-menu__item__link">Contact us</a></li>
                 </ul>
+
+
+                <div id="burgerMenu">
+                    <!-- <span class="burger__top"></span> -->
+                    <span class="burger__center"></span>
+                    <!-- <span class="burger__bottom"></span> -->
+
+                    <ul id="menu">
+                        <li><a class="burger-link" href="#" onclick="hideMenu()">Home</a></li>
+                        <li><a class="burger-link" href="#" onclick="hideMenu()">About us</a></li>
+                        <li><a class="burger-link" href="#" onclick="hideMenu()">WHMCS-bridge</a></li>
+                        <li><a class="burger-link" href="#" onclick="hideMenu()">Hosting</a></li>
+                        <li><a class="burger-link" href="#" onclick="hideMenu()">Pages</a></li>
+                        <li><a class="burger-link" href="#" onclick="hideMenu()">Blog</a></li>
+                        <li><a class="burger-link" href="#" onclick="hideMenu()">Contact us</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -296,7 +310,7 @@
             </div>
         </div>
     </footer>
-
+    <div class="shader"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/script.js"></script>

@@ -152,6 +152,14 @@ body {
     color: #4a6385;
 }
 
+#burgerMenu {
+    display: none;
+}
+
+.shader {
+    display: none;
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -162,18 +170,21 @@ body {
     border-top: 1px solid #3882e5;
 }
 
-.header-menu__list {
+.header-menu {
     height: 86px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__img {
+    margin-top: 10px;
 }
 
 .header-menu__list {
     display: flex;
     gap: 0 38px;
     align-items: center;
-}
-
-.header-menu__item:nth-child(1) {
-    margin-right: auto;
 }
 
 .header-menu__item__link {
@@ -482,7 +493,7 @@ body {
 }
 
 .reviews .title {
-    margin-bottom: 175px;
+    margin-bottom: 120px;
 }
 
 /* .reviews-slider__item {
@@ -502,7 +513,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 50px;
 }
 
 .reviews-slider>.slick-dots button {
@@ -526,6 +536,9 @@ body {
     display: flex;
     width: 520px;
     min-height: 347px;
+    box-shadow: 0px 0px 40px rgba(62, 78, 97, 0.7);
+    margin-top: 55px;
+    margin-bottom: 55px;
 }
 
 .reviews-box__avatar {
@@ -664,4 +677,270 @@ body {
 
 .footer__form-btn:hover {
     background: linear-gradient(#1ce08c, #14aeaa);
+}
+
+
+
+
+
+
+
+                                /* ------------------------------------------- */
+                                /* -------------------ADAPTIVE---------------- */
+                                /* ------------------------------------------- */
+
+
+
+
+
+@media (max-width: 1240px) {
+    .reviews .title {
+        margin-bottom: 30px;
+    }
+    .reviews-box {
+        min-height: 136px;
+        width: 70%;
+    }
+    .reviews-box__avatar {
+        margin: auto 36px;
+    }
+    .reviews-slider>.slick-list{
+        margin: 0;
+    }
+    .reviews-slider>.slick-list>.slick-track {
+        margin: 0;
+    }
+    .reviews-box {
+        margin: 55px auto;
+    }
+}
+
+@media (max-width: 1038px) {
+    .top-info__title {
+        font-size: 40px;
+    }
+
+    .top {
+        padding: 110px 0 125px 0;
+    }
+}
+
+@media (max-width: 940px) {
+    .header-menu__list {
+        display: none;
+    }
+
+    #burgerMenu {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    #burgerMenu span {
+        position: relative;
+        display: inline-block;
+        margin-top: 17px;
+        width: 25px;
+        height: 2px;
+        background-color: #000;
+        border-radius: 3px;
+        transition: background-color .5s;
+    }
+
+    #burgerMenu span::before,
+    #burgerMenu span::after {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 2px;
+        background-color: #000;
+        border-radius: 3px;
+        transition: all .5s;
+    }
+
+    #burgerMenu span::before {
+        top: -8px;
+    }
+
+    #burgerMenu span::after {
+        top: 8px;
+    }
+
+    #burgerMenu span.active {
+        background-color: transparent;
+    }
+
+    #burgerMenu span.active::before {
+        top: 0px;
+        transform: rotate(45deg);
+    }
+
+    #burgerMenu span.active::after {
+        top: 0px;
+        transform: rotate(-45deg);
+    }
+
+    #menu {
+        display: none;
+        cursor: auto;
+    }
+
+    #menu>li>a {
+        color: #FFF;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.5s;
+        text-decoration: none;
+    }
+
+    #menu>li>a:hover {
+        border-bottom: 1px solid #fff;
+    }
+
+    #menu>li:not(#menu>li:nth-child(1)) {
+        margin-top: 10px;
+    }
+
+    #menu.active {
+        display: inline-block;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 87px;
+        z-index: 20;
+        background-color: #2575e7;
+        padding: 25px;
+        border-radius: 0 0 0 15px;
+    }
+
+    .shader.active {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 87px;
+        left: 0;
+        background-color: #000;
+        z-index: 19;
+        opacity: 0.6;
+    }
+
+    .hero-img {
+        max-width: 280px;
+    }
+
+    .top-img {
+        align-self: center;
+    }
+    .top-img__circle {
+        width: 170px;
+        height: 170px;
+        right: -20px;
+        top: -20px;
+    }
+
+    .options-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+
+    .options-item__container {
+        padding: 28px 25px 0 25px;
+    }
+
+    .options-item {
+        max-width: 70%;
+    }
+
+    .options-item__description {
+        margin-bottom: 24px;
+    }
+
+    .options-item__features {
+        margin-bottom: 20px;
+    }
+
+    .reviews {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+
+    .footer-inner {
+        flex-wrap: wrap;
+    }
+
+    .footer-content:nth-child(1) {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 862px) {
+    .top-inner {
+        justify-content: center;
+    }
+    .top-info {
+        max-width: 400px;
+    }
+    .top-info__title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 773px) {
+    .top {
+        padding: 44px 0 68px 0;
+    }
+    .top-inner {
+        flex-wrap: wrap;
+    }
+    .top-info {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .top-info__features-list{
+        text-align-last: left;
+    }
+    .top-img {
+        margin-right: 30px;
+        margin-top: 50px;
+    }
+    .reviews-box {
+        flex-direction: column;
+    }
+    .reviews-box__avatar {
+        margin: 36px auto;
+    }
+    .footer-inner{
+        justify-content: flex-start;
+    }
+    .footer-content:nth-child(4) {
+        max-width: none;
+    }
+    .footer__form input {
+        width: 100%;
+    }
+    .footer__form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 427px) {
+    .top-inner {
+        margin: 0 15px;
+    }
+    .top-info__title {
+        line-height: 34px;
+    }
+    .options-item {
+        max-width: 90%;
+    }
+    .reviews-box {
+        box-shadow: 0px 0px 15px rgb(62 78 97 / 70%);
+        width: 90%;
+    }
 }
